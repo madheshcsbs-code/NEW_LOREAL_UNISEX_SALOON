@@ -1,0 +1,464 @@
+.contact-section {
+  background-color: #ffffff;
+  position: relative;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 48px;
+  align-items: stretch;
+}
+
+/* Left Column: Location Info Card */
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.location-info-card {
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-xl);
+  padding: 36px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: var(--transition-normal);
+}
+
+.location-info-card:hover {
+  border-color: var(--color-primary-dark);
+  box-shadow: var(--shadow-md);
+}
+
+.card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+  background-color: var(--color-primary-light);
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 82, 204, 0.15);
+  align-self: flex-start;
+  margin-bottom: 16px;
+}
+
+.live-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #10b981;
+  box-shadow: 0 0 8px #10b981;
+}
+
+.location-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--color-navy);
+  line-height: 1.2;
+}
+
+.location-card-subtitle {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+  margin-bottom: 28px;
+}
+
+/* Details List */
+.location-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 32px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.detail-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.detail-icon-box {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--border-radius);
+  background-color: #ffffff;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.detail-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.detail-label {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+}
+
+.detail-value {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  line-height: 1.5;
+}
+
+.detail-link {
+  transition: var(--transition-fast);
+}
+
+.detail-link:hover {
+  color: var(--color-primary);
+}
+
+/* Actions */
+.location-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.directions-btn {
+  flex: 1;
+  min-width: 180px;
+}
+
+.whatsapp-btn {
+  color: #15803d;
+  border-color: #bbf7d0;
+  background-color: #f0fdf4;
+}
+
+.whatsapp-btn:hover {
+  background-color: #15803d;
+  color: #ffffff;
+  border-color: #15803d;
+}
+
+.whatsapp-icon {
+  color: #16a34a;
+}
+
+.whatsapp-btn:hover .whatsapp-icon {
+  color: #ffffff;
+}
+
+/* Quick Strip */
+.quick-contact-strip {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.strip-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-fast);
+}
+
+.strip-item:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.instagram-icon {
+  color: #db2777;
+}
+
+.phone-icon {
+  color: var(--color-primary);
+}
+
+.strip-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8125rem;
+  color: var(--color-text-body);
+}
+
+.strip-text strong {
+  color: var(--color-navy);
+  font-size: 0.875rem;
+}
+
+/* Right Column: Interactive Map Viewport */
+.contact-map-viewport {
+  height: 100%;
+  min-height: 520px;
+  display: flex;
+}
+
+.interactive-map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  border-radius: var(--border-radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-lg);
+  background-color: var(--color-navy);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Controls Header */
+.map-top-bar {
+  background-color: var(--color-navy);
+  color: #ffffff;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 10;
+}
+
+.map-title-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.live-pulse {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #10b981;
+  box-shadow: 0 0 10px #10b981;
+}
+
+.map-bar-title {
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.map-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.map-type-toggle {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 3px;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.type-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  padding: 5px 10px;
+  border-radius: var(--border-radius-sm);
+  transition: var(--transition-fast);
+}
+
+.type-btn.active {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+.map-zoom-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.zoom-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--border-radius-sm);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: var(--transition-fast);
+}
+
+.zoom-btn:hover {
+  background-color: var(--color-primary);
+}
+
+/* Floating Overlay Pin Card */
+.map-floating-overlay {
+  position: absolute;
+  top: 64px;
+  left: 20px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.overlay-pin-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: rgba(7, 20, 38, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 10px 16px;
+  border-radius: var(--border-radius-lg);
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-md);
+  pointer-events: auto;
+}
+
+.overlay-pin-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 0 12px var(--color-primary);
+}
+
+.overlay-pin-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: #ffffff;
+}
+
+.overlay-pin-text strong {
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.overlay-pin-text span {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+/* Interactive Map Iframe */
+.interactive-iframe {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  border: none;
+  min-height: 420px;
+  filter: contrast(1.05) saturate(1.1);
+}
+
+/* Bottom Footer Bar */
+.map-bottom-bar {
+  background-color: var(--color-navy);
+  color: #94a3b8;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.8125rem;
+  z-index: 10;
+}
+
+.map-coords-tag {
+  font-weight: 500;
+  color: #cbd5e1;
+}
+
+.map-open-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #60a5fa;
+  font-weight: 600;
+  transition: var(--transition-fast);
+}
+
+.map-open-link:hover {
+  color: #ffffff;
+}
+
+/* Responsive Queries */
+@media (max-width: 992px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .contact-map-viewport {
+    min-height: 460px;
+  }
+}
+
+@media (max-width: 640px) {
+  .location-info-card {
+    padding: 24px;
+  }
+  .quick-contact-strip {
+    grid-template-columns: 1fr;
+  }
+  .map-floating-overlay {
+    top: 56px;
+    left: 12px;
+    right: 12px;
+  }
+  .overlay-pin-card {
+    padding: 8px 12px;
+  }
+  .overlay-pin-text strong {
+    font-size: 0.8125rem;
+  }
+  .map-top-bar {
+    padding: 10px 14px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .map-bottom-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
