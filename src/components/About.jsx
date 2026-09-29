@@ -18,7 +18,7 @@ const About = () => {
         {/* Visual Graphic Column */}
         <div className="about-visual animate-fade-up">
           <div className="about-image-wrapper">
-            <img src="/images/real_reception.jpg" alt="Salon Professional Service" className="about-image" />
+            <img src={`${import.meta.env.BASE_URL}images/real_reception.jpg`} alt="Salon Professional Service" className="about-image" />
             <div className="about-experience-badge">
               <span className="badge-number">100%</span>
               <span className="badge-text">Authentic Product Standards</span>

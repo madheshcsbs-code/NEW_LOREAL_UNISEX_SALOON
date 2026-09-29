@@ -8,11 +8,11 @@ const Gallery = () => {
   const categories = ['All', 'Hair', 'Beauty', 'Bridal', 'Salon'];
 
   const galleryImages = [
-    { id: 1, src: '/images/real_hero.jpg', category: 'Salon', title: 'Premium Salon Ambience', alt: 'Salon Interior' },
-    { id: 2, src: '/images/real_storefront.jpg', category: 'Salon', title: 'Our Storefront', alt: 'Salon Storefront' },
-    { id: 3, src: '/images/real_beauty_room.jpg', category: 'Beauty', title: 'Beauty & Wellness Room', alt: 'Beauty Room' },
-    { id: 4, src: '/images/real_products.jpg', category: 'Hair', title: 'Professional Products', alt: 'Salon Products' },
-    { id: 5, src: '/images/real_reception.jpg', category: 'Salon', title: 'Welcoming Reception', alt: 'Reception Area' }
+    { id: 1, src: `${import.meta.env.BASE_URL}images/real_hero.jpg`, category: 'Salon', title: 'Premium Salon Ambience', alt: 'Salon Interior' },
+    { id: 2, src: `${import.meta.env.BASE_URL}images/real_storefront.jpg`, category: 'Salon', title: 'Our Storefront', alt: 'Salon Storefront' },
+    { id: 3, src: `${import.meta.env.BASE_URL}images/real_beauty_room.jpg`, category: 'Beauty', title: 'Beauty & Wellness Room', alt: 'Beauty Room' },
+    { id: 4, src: `${import.meta.env.BASE_URL}images/real_products.jpg`, category: 'Hair', title: 'Professional Products', alt: 'Salon Products' },
+    { id: 5, src: `${import.meta.env.BASE_URL}images/real_reception.jpg`, category: 'Salon', title: 'Welcoming Reception', alt: 'Reception Area' }
   ];
 
   const filteredImages = filter === 'All' 

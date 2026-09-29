@@ -54,7 +54,7 @@ const Hero = () => {
         {/* Right Column - Visual Graphic */}
         <div className="hero-visual animate-fade-up" style={{ animationDelay: '0.15s' }}>
           <div className="hero-image-wrapper">
-            <img src="/images/real_hero.jpg" alt="New L'Oreal Professional Unisex Salon Interior" className="hero-image" />
+            <img src={`${import.meta.env.BASE_URL}images/real_hero.jpg`} alt="New L'Oreal Professional Unisex Salon Interior" className="hero-image" />
             
             {/* Primary Floating Badge */}
             <div className="floating-card primary-floating">
