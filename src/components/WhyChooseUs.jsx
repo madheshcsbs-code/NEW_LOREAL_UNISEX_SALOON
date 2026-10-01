@@ -6,8 +6,8 @@ const WhyChooseUs = () => {
     {
       id: 1,
       icon: Award,
-      title: "L'Oreal Certified Products",
-      description: "We exclusively use authentic L'Oreal Professional products for our salon services to ensure premium, long-lasting quality results."
+      title: "L’ORÉAL PROFESSIONNEL Certified Products",
+      description: "We exclusively use authentic L’ORÉAL PROFESSIONNEL products for our salon services to ensure premium, long-lasting quality results."
     },
     {
       id: 2,

@@ -22,7 +22,7 @@ const Contact = () => {
   };
 
   // Google Maps embed URL with query parameters
-  const embedUrl = `https://maps.google.com/maps?q=New%20L'Oreal%20Professional%20Unisex%20Salon,%20Sandhapet,%20Asanur%20Road,%20Tirukkoilur,%20Tamil%20Nadu%20605757&t=${mapType}&z=${zoomLevel}&ie=UTF8&iwloc=&output=embed`;
+  const embedUrl = `https://maps.google.com/maps?q=New%20L’ORÉAL%20PROFESSIONNEL%20Unisex%20Salon,%20Sandhapet,%20Asanur%20Road,%20Tirukkoilur,%20Tamil%20Nadu%20605757&t=${mapType}&z=${zoomLevel}&ie=UTF8&iwloc=&output=embed`;
 
   return (
     <section id="contact" className="section contact-section">
@@ -51,7 +51,7 @@ const Contact = () => {
                 <span>Flagship Center</span>
               </div>
               
-              <h3 className="location-card-title">New L'Oreal Professional</h3>
+              <h3 className="location-card-title">New L’ORÉAL PROFESSIONNEL</h3>
               <p className="location-card-subtitle">Unisex Salon</p>
 
               <div className="location-details-list">
@@ -181,7 +181,7 @@ const Contact = () => {
                     <MapPin size={18} />
                   </div>
                   <div className="overlay-pin-text">
-                    <strong>New L'Oreal Professional Unisex Salon</strong>
+                    <strong>New L’ORÉAL PROFESSIONNEL Unisex Salon</strong>
                     <span>Sandhapet, Asanur Road, Tirukkoilur</span>
                   </div>
                 </div>
@@ -189,7 +189,7 @@ const Contact = () => {
 
               {/* Interactive Map Iframe */}
               <iframe
-                title="New L'Oreal Professional Unisex Salon Interactive Location Map"
+                title="New L’ORÉAL PROFESSIONNEL Unisex Salon Interactive Location Map"
                 src={embedUrl}
                 className="interactive-iframe"
                 loading="lazy"
