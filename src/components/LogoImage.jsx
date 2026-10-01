@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { removeBlackBackground } from '../utils/removeBackground';
 
-const LogoImage = ({ src = `${import.meta.env.BASE_URL}images/logo.png`, alt = "New L’ORÉAL PROFESSIONNEL Unisex Salon", className = "" }) => {
+const LogoImage = ({ src = `${import.meta.env.BASE_URL}images/logo.png`, alt = "New L'Oréal Professionnel Unisex Salon", className = "" }) => {
   const [processedSrc, setProcessedSrc] = useState(src);
 
   useEffect(() => {

@@ -35,7 +35,7 @@ const Services = () => {
             Enterprise Service <span className="text-primary">Domains</span>
           </h2>
           <p className="section-subtitle">
-            Explore our comprehensive portfolio of professional hair, skin, beauty, and grooming treatments delivered with authorized L’ORÉAL PROFESSIONNEL formulations.
+            Explore our comprehensive portfolio of professional hair, skin, beauty, and grooming treatments delivered with authorized L'Oréal Professionnel formulations.
           </p>
         </div>
 
@@ -109,7 +109,7 @@ const Services = () => {
                   </ul>
                   <div className="service-card-footer">
                     <button className="btn-primary btn-sm flex-btn" onClick={() => {
-                       const message = encodeURIComponent(`Hi, I would like to enquire about ${category.title} services at New L’ORÉAL PROFESSIONNEL Unisex Salon.`);
+                       const message = encodeURIComponent(`Hi, I would like to enquire about ${category.title} services at New L'Oréal Professionnel Unisex Salon.`);
                        window.open(`https://wa.me/919942890776?text=${message}`, '_blank');
                     }}>
                       <MessageSquare size={16} />

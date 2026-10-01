@@ -17,12 +17,12 @@ const Footer = () => {
             <a href="#home" className="footer-logo-link">
               <LogoImage className="footer-logo-img" />
               <div className="footer-logo-text">
-                <span className="footer-brand-title">NEW L’ORÉAL</span>
+                <span className="footer-brand-title">NEW L'Oréal</span>
                 <span className="footer-brand-sub">Professionnel Unisex Salon</span>
               </div>
             </a>
             <p className="footer-brand-desc">
-              Your premier destination for high-performance hair care, skin facials, and grooming services in Tirukkoilur. Powered by authorized L’ORÉAL PROFESSIONNEL products.
+              Your premier destination for high-performance hair care, skin facials, and grooming services in Tirukkoilur. Powered by authorized L'Oréal Professionnel products.
             </p>
             <div className="footer-address-info">
               <MapPin size={16} className="footer-icon" />
@@ -89,10 +89,10 @@ const Footer = () => {
         {/* Footer Bottom Bar */}
         <div className="footer-bottom">
           <p className="footer-copyright">
-            &copy; 2026 New L’ORÉAL PROFESSIONNEL Unisex Salon. All rights reserved.
+            &copy; 2026 New L'Oréal Professionnel Unisex Salon. All rights reserved.
           </p>
           <div className="footer-bottom-actions">
-            <span className="footer-quality-tag">Authorized L’ORÉAL PROFESSIONNEL Partner</span>
+            <span className="footer-quality-tag">Authorized L'Oréal Professionnel Partner</span>
             <button className="back-to-top-btn" onClick={scrollToTop} aria-label="Scroll to top">
               <span>Back to top</span>
               <ArrowUp size={14} />

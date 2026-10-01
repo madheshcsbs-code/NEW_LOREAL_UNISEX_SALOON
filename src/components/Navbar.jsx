@@ -28,7 +28,7 @@ const Navbar = () => {
   ];
 
   const bookAppointment = () => {
-    const message = encodeURIComponent("Hi, I would like to book an appointment at New L’ORÉAL PROFESSIONNEL Unisex Salon. Please share the available timings.");
+    const message = encodeURIComponent("Hi, I would like to book an appointment at New L'Oréal Professionnel Unisex Salon. Please share the available timings.");
     window.open(`https://wa.me/919942890776?text=${message}`, '_blank');
   };
 
@@ -63,7 +63,7 @@ const Navbar = () => {
           <a href="#home" className="navbar-logo">
             <LogoImage className="logo-img" />
             <div className="logo-text-wrapper">
-              <span className="logo-main-title">NEW L’ORÉAL</span>
+              <span className="logo-main-title">NEW L'Oréal</span>
               <span className="logo-sub-title">Professionnel Unisex Salon</span>
             </div>
           </a>

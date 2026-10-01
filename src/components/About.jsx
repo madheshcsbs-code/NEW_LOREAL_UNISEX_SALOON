@@ -4,7 +4,7 @@ import './About.css';
 const About = () => {
   const highlights = [
     "Professional salon experience",
-    "L’ORÉAL PROFESSIONNEL products",
+    "L'Oréal Professionnel products",
     "Wide range of services",
     "Unisex services",
     "Convenient location",
@@ -37,10 +37,10 @@ const About = () => {
           </h2>
           
           <p className="about-description">
-            Welcome to <strong>New L’ORÉAL PROFESSIONNEL Unisex Salon</strong>, your premier destination for exceptional beauty, hair, and grooming services in Tirukkoilur. We cater to both men and women, ensuring everyone walks out feeling confident and looking their absolute best.
+            Welcome to <strong>New L'Oréal Professionnel Unisex Salon</strong>, your premier destination for exceptional beauty, hair, and grooming services in Tirukkoilur. We cater to both men and women, ensuring everyone walks out feeling confident and looking their absolute best.
           </p>
           <p className="about-description">
-            Our expert stylists and therapists combine rich salon experience with premium L’ORÉAL PROFESSIONNEL formulations to deliver personalized care in a relaxing, hygienic, and state-of-the-art environment.
+            Our expert stylists and therapists combine rich salon experience with premium L'Oréal Professionnel formulations to deliver personalized care in a relaxing, hygienic, and state-of-the-art environment.
           </p>
 
           <div className="about-highlights-grid">
